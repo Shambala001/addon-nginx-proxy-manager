@@ -19,6 +19,10 @@ sed -i 's#/data/logs/proxy-host-{{ id }}_access.log#/proc/1/fd/1#g' \
     /opt/nginx-proxy-manager/templates/proxy_host.conf
 sed -i 's#/data/logs/proxy-host-{{ id }}_error.log#/proc/1/fd/1#g' \
     /opt/nginx-proxy-manager/templates/proxy_host.conf
+sed -i 's#/data/logs/stream-{{ id }}_access.log#/proc/1/fd/1#g' \
+    /opt/nginx-proxy-manager/templates/stream.conf
+sed -i 's#/data/logs/stream-{{ id }}_error.log#/proc/1/fd/1#g' \
+    /opt/nginx-proxy-manager/templates/stream.conf
 sed -i 's#/data/logs/fallback_access.log#/proc/1/fd/1#g' /etc/nginx/conf.d/default.conf
 sed -i 's#/data/logs/fallback_error.log#/proc/1/fd/1#g' /etc/nginx/conf.d/default.conf
 sed -i 's#/data/logs/fallback_access.log#/proc/1/fd/1#g' /etc/nginx/conf.d/default.conf
