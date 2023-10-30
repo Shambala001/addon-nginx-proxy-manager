@@ -18,10 +18,12 @@ ports:
   80/tcp: 80
   81/tcp: 81
   443/tcp: 443
+  8843/tcp: 8843
 ports_description:
   80/tcp: HTTP Entrance port
   81/tcp: Proxy management web interface
   443/tcp: HTTPS/SSL Entrance port
+  8843/tcp: Extra stream port
 map:
   - ssl:rw
   - backup:rw
