@@ -18,5 +18,6 @@ jobs:
     with:
       repository: addon-hassio-repository-stable
       repository_edge: addon-hassio-repository-edge
+      repository_beta: addon-hassio-repository-beta
     secrets:
       DISPATCH_TOKEN: ${{ secrets.DISPATCH_TOKEN }}
