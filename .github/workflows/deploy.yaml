@@ -15,9 +15,5 @@ on:
 jobs:
   workflows:
     uses: hassio-addons/workflows/.github/workflows/addon-deploy.yaml@main
-    with:
-      repository: addon-nginx-proxy-manager-with-stream
-      repository_edge: addon-nginx-proxy-manager-with-stream
-      repository_beta: addon-nginx-proxy-manager-with-stream
     secrets:
       DISPATCH_TOKEN: ${{ secrets.DISPATCH_TOKEN }}
